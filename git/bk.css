@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Flame Bold";
+    src: url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.eot");
+    src: url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.svg#Flame Bold")format("svg");
+}
+
+@font-face {
+    font-family: "material";
+    src: url(/MaterialIcons.f20305dee9d396fea5c7.ttf);
+    font-display: auto
+}
+
+@font-face {
+    font-family: "Flame-Bold";
+    src: url(/FlameBold.28425e3e58c6f1505f70.ttf);
+    font-display: auto
+}
+
+@font-face {
+    font-family: "Flame-Regular";
+    src: url(/FlameRegular.c3f0a4689c31d16329b5.ttf);
+    font-display: auto
+}
+
+@font-face {
+    font-family: "Flame-RegularSans";
+    src: url(/FlameRegularSans.ac1ee8a48cb61a7b6848.ttf);
+    font-display: auto
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:rgb(248, 241, 231);
+    font-family: "Flame Bold"; 
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+.navcontainer {
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    background-color: #F5EBDC;
+    padding: 12px 0; 
+    border-bottom: 1px solid #beb4b4;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+
+.navbutton {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: -50px;
+}
+
+.bar {
+    border: 2px solid #502314;
+    width: 19px;
+}
+
+.navlogo {
+    width: 180px;
+    height: 10px;
+    margin-top: -12px;
+    margin-left: 150px;
+}
+
+.logo {
+    object-fit: contain;
+    margin-top: 0px;
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.cart1 {
+    padding: 9px 15px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(214, 35, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: -70px;
+    font-family: "Flame-Bold";
+    font-weight: 900;
+}
+
+.size {
+    margin-top: 10px;
+}
+
+.c {
+    margin-top: 0px;
+    font-weight: 700;
+    font-family: "Flame-Regular";
+}
+
+
+.block1 {
+    top:calc(100% - 50px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    height: 400px;
+
+}
+
+.d {
+    display: flex;
+    ;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 400px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+
+.text {
+    font-size: 60px;
+    line-height: 1.125em;
+    font-weight: 900;
+    color: #502314;
+}
+
+._1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+._2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px 0px;
+    border-radius: 50px;
+    background-color: rgb(214, 35, 0);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Flame-Bold";
+    font-weight: 900;
+    margin-top: 20px;
+    width: 23em;
+}
+
+._02 {
+    font-size: 1.2em;
+    margin-top: 3px;
+    font-family: "Flame-Regular";
+}
+
+.size1 {
+    width: 20px;
+    height: 20px;
+}
+
+.scooter {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+    gap: 20px;
+    border-radius: 50px;
+    background-color: #F5EBDC;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Flame-Bold";
+    font-weight: 900;
+    margin-top: 8px;
+    width: 23em;
+}
+
+._04 {
+    color: #502314;
+    font-size: 1.2em;
+    margin-top: 0px;
+    font-weight: 900;
+
+}
+
+.e {
+    width: 50%;
+}
+
+.image1 {
+    width: 700px;
+    margin-left: -135px;
+}
+
+.image {
+    margin-top: -35px;
+    width: 650px;
+    height: 350px;
+    margin-left: -80px;
+}
+.block2 {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+    margin-left: 130px;
+    margin-bottom: 200px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 100px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .part1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .part2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+
+  .part2 h1{
+    color: #502314;
+    font-size: 23px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .part2 p{
+    color: #502314;
+    font-family: "Flame-RegularSans";
+    font-size: 13px;
+    text-align: justify;
+    line-height: 20px;
+    margin: 10px;
+    
+  }
+
+  .see{
+    color: #502314;
+    font-family: "Flame-RegularSans";
+    font-size: 13px;
+    margin-right: auto;
+    margin-left: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+  .part2 button{
+   padding: 10px 20px;
+   align-self: flex-end;
+   border-radius: 20px;
+   margin-right: 10px;
+   background-color: white;
+   border: 1px solid black;
+   font-family: "Flame-Bold";
+   cursor: pointer;
+   color: #502314;
+  }
+  .part2 div{
+    align-self: flex-end;
+   
+  }
+  .blockq{
+      background-color: rgb(0 0 0 / 4%);
+      display: flex;
+      flex-direction: column;
+  }
+  .block3{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 500px;
+  }
+ 
+.img2{
+    width: 450px;
+    margin-top: -60px;
+    margin-left: 200px;
+}
+
+.blockb{
+    width: 700px;
+    margin-top: -100px;
+    margin-right: 500px;
+    margin-top: -150px;
+}
+
+.blockb pre{
+    
+    font-size: 48px;
+    font-family: "Flame-Bold";
+    margin-left: 100px;
+    margin-top: 200px;
+    color: #502314;
+}
+
+.container1{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.left{
+    width: 190px;
+    margin-left: 110px;
+}
+.right{
+    width:190px;
+    
+}
+.as{
+    color: #502314;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.tm{
+    text-align: center;
+    padding: 20px;
+    background-color: #502314;
+    color: white;
+    font-family: "Flame-RegularSans";
+    font-size:  13px;
+    margin-bottom: 60px;
+}
+
+.seea{
+    text-decoration: underline;
+}
+footer {
+    
+    position: fixed;
+    bottom: -00;
+    width: 100%;
+    z-index: 9999;
+    background-color: #F5EBDC;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+
+.foot2  img{
+    width: 20px;
+    height: 20px;
+}
+
+.foot4 img{
+    width: 20px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.foot p{
+    color: #502314;
+    font-family: "Flame-RegularSans";
+    margin-left: -10px;
+    font-size: 13px;
+    
+}
